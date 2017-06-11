@@ -1,0 +1,144 @@
+@import "./variables";
+
+.contacts {
+  border: 2px solid red;
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 30px 0 30px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+    margin-bottom: 35px;
+    padding: 0 30px 0 30px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #444444;
+  }
+  & p {
+    vertical-align: top;
+    padding: 10px 25px 0 0;
+    line-height: 35px;
+  }
+  &__value {
+    width: 155px;
+  }
+  &__value--line {
+    border-bottom: 1px solid #62d1ba;
+  }
+  &__map {
+    width: 320;
+    height: 457px;
+    padding: 0;
+    margin: 0;
+    background: url(../img/map-mobile@1x.jpg) no-repeat;
+  }
+  & .btn {
+    margin: 40px 30px 40px 30px;
+    padding: 15px 55px 15px 50px;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;;
+    flex-wrap: no-wrap;
+    border: 2px solid red;
+
+    &__title {
+      margin-left: 15px;
+      padding: 0 30px 0 30px;
+      font-size: 43px;
+      font-weight: bold;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: no-wrap;
+      width: 668px;
+      margin: 0 auto 35px auto;
+      margin-left: 15px;
+      padding: 0 30px 0 30px;
+      font-size: 17px;
+      font-weight: normal;
+      color: #444444;
+    }
+    & p {
+      vertical-align: top;
+      padding: 10px 25px 0 0;
+      line-height: 35px;
+    }
+    &__value {
+      width: 220px;
+    }
+    &__map {
+      width: 320px;
+      height: 457px;
+      padding: 0;
+      margin: 0;
+      background: url(../img/map-mobile@1x.jpg) no-repeat;
+    }
+    & .btn {
+      margin: 40px auto 40px auto;
+      padding: 15px 55px 15px 50px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+    .contacts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;;
+    border: 2px solid red;
+
+    &__title {
+      margin-left: 175px;
+      padding: 0;
+      font-size: 43px;
+      font-weight: bold;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: no-wrap;
+      width: 350px;
+      margin: 0 0 35px 175px;
+      padding: 0;
+      font-size: 17px;
+      font-weight: normal;
+      color: #444444;
+    }
+    & p {
+      vertical-align: top;
+      padding: 10px 25px 0 0;
+      line-height: 35px;
+    }
+    &__value {
+      width: 220px;
+    }
+    &__value:first-child {
+      border-bottom: 1px solid #62d1ba;
+    }
+    &__map {
+      position: absolute;
+      width: 320px;
+      height: 457px;
+      padding: 0;
+      margin: 0;
+      top: 30px;
+      right: 50px;
+      background: url(../img/map-mobile@1x.jpg) no-repeat;
+    }
+    & .btn {
+      margin: 40px 30px 40px 175px;
+      padding: 15px 55px 15px 50px;
+    }
+  }
+}

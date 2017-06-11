@@ -1,0 +1,7 @@
+@import "./mixins";
+@import "./variables";
+
+.container {
+  border: 2px solid blue;
+  @include container;
+}

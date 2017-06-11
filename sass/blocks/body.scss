@@ -1,0 +1,13 @@
+@import "./variables";
+@import "./mixins";
+
+.body {
+  @include font-face;
+  @include font-face-bold;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

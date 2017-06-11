@@ -1,0 +1,102 @@
+
+.video {
+  margin: 0 0 0 0;
+  text-align: center;
+
+    &__title {
+      position: relative;
+      width: 60px;
+      margin: 30px 0 30px 0;
+      padding: 0 0 0 95px;
+      line-height: 25px;
+    }
+    &__title::before {
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 30px;
+      top: 3px;
+      left: 30px;
+      background: url(../img/icon-video.svg) no-repeat;
+    }
+    &__img {
+      position: relative;
+      margin: 0 0 35px 0;
+    }
+    &__img::before {
+      position: absolute;
+      content: '';
+      width: 105px;
+      height: 80px;
+      top: 37px;
+      left: 75px;
+      background: url(../img/icon-play.svg) no-repeat;
+    }
+    &__depiction {
+      width: 205px;
+      margin: 0 0 30px 0;
+      padding: 0 0 0 30px;
+      text-align: left;
+      line-height: 25px;
+    }
+    & .btn {
+      margin: 0 auto 30px auto;
+      padding: 16px 22px 16px 22px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    display: flex;
+    flex-direction: column;
+    height: 743px;
+    margin: 0 0 50px 0;
+    text-align: center;
+
+    &__title {
+      position: relative;
+      width: 60px;
+      margin: 30px 0 30px 0;
+      padding: 0 0 0 95px;
+      text-align: left;
+      line-height: 25px;
+    }
+    &__title::before {
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 30px;
+      top: 3px;
+      left: 30px;
+      background: url(../img/icon-video.svg) no-repeat;
+    }
+    &__img {
+      position: relative;
+      margin: 0 0 35px 0;
+    }
+    &__img::before {
+      position: absolute;
+      content: '';
+      width: 105px;
+      height: 80px;
+      top: 37px;
+      left: 280px;
+      background: url(../img/icon-play.svg) no-repeat;
+    }
+    &__depiction {
+      width: 555px;
+      margin: 0 0 30px 0;
+      padding: 0 0 0 30px;
+      text-align: left;
+      line-height: 25px;
+    }
+    & .btn {
+      margin: 0 auto 30px auto;
+      padding: 16px 22px 16px 22px;
+    }
+}
+}
+
+@media (min-width: $desktop-width) {
+
+}

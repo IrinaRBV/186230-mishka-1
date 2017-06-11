@@ -1,0 +1,25 @@
+@import "./variables";
+@import "./common";
+
+label {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.form {
+  border: 2px solid red;
+
+  &__input-textarea--placeholder {
+  color: #444;
+  font-size: 17px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
+
+}
