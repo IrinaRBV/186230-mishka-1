@@ -1,0 +1,44 @@
+@import "./variables";
+
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.keyword-h2 {
+  font-size: 17px;
+  color: $color-turquoise;
+}
+
+.title-h2 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+svg {
+  fill: #63d1bb;
+}
+
+.wavy-line {
+
+}
+
+.text-depiction {
+  font-weight: normal;
+  font-size: 15px;
+  color: #444444;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 80px 20px 80px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444444;
+  background: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #444444;
+}

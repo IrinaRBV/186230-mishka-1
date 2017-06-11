@@ -1,0 +1,29 @@
+@import "./variables";
+@import "../common";
+
+.type {
+
+  &__title {
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    list-style: none;
+  }
+  & input[type="radio"] {
+    padding: 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
+
+}

@@ -1,0 +1,113 @@
+.popap {
+  position: fixed;
+  display: flex;
+
+  display: none;
+
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%, -50%);
+  width: 320px;
+  text-align: center;
+  background-color: #fff;
+  z-index: 100;
+
+  &__wrap {
+    margin: 35px 30px 45px 30px;
+  }
+  &__title {
+    width: 160px;
+    margin: 0 auto 0 auto;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 15px;
+    color: #444;
+    font-weight: normal;
+  }
+  &__size {
+    display: inline-block;
+    color: #444;
+    margin: 35px 0 35px 0;
+    padding: 15px 30px 15px 30px;
+    cursor: pointer;
+    border: 2px solid #ececec;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  &__size:first-child {
+    border: 2px solid #63d1bb;
+  }
+  & .btn--color {
+    border: none;
+    color: #fff;
+    background-color: #63d1bb;
+  }
+}
+@media (min-width: $tablet-width) {
+    .popap {
+    position: fixed;
+    display: flex;
+
+    display: none;
+
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    width: 568px;
+    text-align: center;
+    background-color: #fff;
+    z-index: 100;
+
+    &__wrap {
+      margin: 35px 30px 45px 30px;
+    }
+    &__title {
+      width: 400px;
+      font-size: 25px;
+      text-transform: uppercase;
+    }
+    & form {
+      width: 450px;
+      margin: 0 auto 0 auto;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .popap {
+    position: fixed;
+    display: flex;
+
+    display: none;
+
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    width: 568px;
+    text-align: center;
+    background-color: #fff;
+    z-index: 100;
+
+    &__wrap {
+      margin: 35px 30px 45px 30px;
+    }
+    &__title {
+      width: 400px;
+      font-size: 25px;
+      text-transform: uppercase;
+    }
+    & form {
+      width: 450px;
+      margin: 0 auto 0 auto;
+    }
+  }
+
+}

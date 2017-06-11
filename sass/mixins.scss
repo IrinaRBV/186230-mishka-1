@@ -1,0 +1,53 @@
+@import "./variables";
+
+@mixin clearfix() {
+  &::after {
+  display: table;
+  content: "";
+  clear: both;
+  }
+}
+
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+  }
+}
+
+@mixin font-face() {
+  font-weight: normal;
+  font-family: "Open Sans" Arial, sans-serif;
+  font-style: normal;
+
+  src: url("fonts/opensans.woff2") format("woff2"),
+  url("fonts/opensans.woff") format("woff");
+}
+
+@mixin font-face-bold() {
+  font-weight: 700;
+  font-family: "Open Sans" Arial, sans-serif;
+  font-style: normal;
+
+  src: url("fonts/opensansbold.woff2") format("woff2"),
+  url("fonts/opensansbold.woff") format("woff");
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

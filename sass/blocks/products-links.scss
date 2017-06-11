@@ -1,0 +1,106 @@
+@import "./variables";
+@import "./mixins";
+
+.products-links {
+  border: 2px solid red;
+  margin: -120px 0 0 0;
+  @include clearfix;
+
+  &__item {
+    position: relative;
+    height: 103px;
+    background: #63d1bb;
+  }
+  &__item svg {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    fill: #231F20;
+    opacity: 0.3;
+  }
+  &__title {
+    margin: 0;
+    padding: 30px 40px 30px 30px;
+    width: 130px;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  &__item--color {
+    background: #56c3b2;
+  }
+  &__item--color svg {
+    right: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .products-links {
+    display: flex;
+    flex: 1;
+    width: 668px;
+    min-height: 130px;
+    margin: -134px auto 0 auto;
+    padding: 0;
+
+    &__item {
+      width: 334px;
+      height: 130px;
+    }
+    &__item svg {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      fill: #231F20;
+      opacity: 0.3;
+    }
+    &__title {
+      margin: 0;
+      padding: 30px 40px 30px 30px;
+      width: 130px;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    &__item--color {
+      background: #56c3b2;
+    }
+    &__item--color svg {
+      right: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .products-links {
+    width: 1050px;
+
+    &__item {
+      width: 525px;
+      height: 130px;
+    }
+    &__item svg {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      fill: #231F20;
+      opacity: 0.3;
+    }
+    &__title {
+      margin: 0;
+      padding: 30px 40px 30px 30px;
+      width: 130px;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+     }
+    &__item--color {
+      background: #56c3b2;
+    }
+     &__item--color svg {
+      right: 30px;
+    }
+  }
+}
