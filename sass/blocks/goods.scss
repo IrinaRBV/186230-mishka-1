@@ -38,6 +38,7 @@
       list-style: none;
     }
     &__item:last-child {
+      @include clearfix;
       border-top: 1px solid #ececec;
     }
   }

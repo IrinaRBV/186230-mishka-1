@@ -1,11 +1,9 @@
 @import "./variables";
 
 @mixin clearfix() {
-  &::after {
   display: table;
   content: "";
   clear: both;
-  }
 }
 
 @mixin container() {
