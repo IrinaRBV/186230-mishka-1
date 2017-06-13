@@ -4,7 +4,7 @@
 .main-header {
   border: 2px solid red;
   height: 283px;
-  background-color: #fbfbfb;
+  background-color: #f1f1f1;
 
 
   &--color {
@@ -29,6 +29,7 @@
 @media (min-width: $tablet-width) {
 
   .main-header {
+    margin-top: -52px;
     height: 549px;
     background-color: #fbfbfb;
 
@@ -41,6 +42,7 @@
 @media (min-width: $desktop-width) {
 
   .main-header {
+
     height: 746px;
     background-color: #fbfbfb;
 
