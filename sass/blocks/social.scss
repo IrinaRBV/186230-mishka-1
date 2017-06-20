@@ -14,7 +14,9 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    margin: 60px auto 60px auto;
+    margin:auto;
+    padding: 10px;
+    border: none;
 
     &__link {
       font-size: 0;
@@ -26,7 +28,9 @@
 
 @media (min-width: $desktop-width) {
     .social {
-      margin: 60px auto 60px auto;
+      margin:auto;
+      padding: 10px;
+      border: none;
 
     &__link {
       font-size: 0;

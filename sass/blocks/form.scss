@@ -1,22 +1,132 @@
 @import "./variables";
 @import "./common";
 
-label {
-  font-size: 17px;
-  font-weight: bold;
-}
-
 .form {
-  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
 
-  &__input-textarea--placeholder {
-  color: #444;
-  font-size: 17px;
+  &__input-radio[type="radio"] {
+    display: none;
+  }
+  &__input-checkbox[type="checkbox"] {
+    display: none;
+  }
+  &__input-radio[type="radio"] + .form__label-radio .form__indicator,
+  &__input-checkbox[type="checkbox"] + .form__label-checkbox .form__indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #444;
+    cursor: pointer;
+  }
+  &__input-radio[type="radio"]:checked + .form__label-radio .type__indicator::before,
+  &__input-checkbox[type="checkbox"]:checked + .form__label-checkbox .form__indicator::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+  }
+  &__input-text[type="text"],
+  &__input-text[type="tel"],
+  &__input-text[type="email"],
+  &__input-textarea[type="text"] {
+    font-size: 17px;
+  }
+  &__label-radio,
+  &__label-checkbox,
+  &__label-text {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    cursor: pointer;
+  }
+  &__input-text[type="text"]::-webkit-input-placeholder,
+  &__input-textarea[type="text"]::-webkit-input-placeholder {
+    color: #ccc;
+
+  }
+  &__input-text[type="text"]::-moz-placeholder,
+  &__input-textarea[type="text"]::-moz-placeholder {
+    color: #ccc;
+  }
+  &__input-text[type="tel"]::-webkit-input-placeholder,
+  &__input-text[type="email"]::-webkit-input-placeholder, {
+    color: #ccc;
+  }
+  &__input-text[type="tel"]::-moz-placeholder,
+  &__input-text[type="email"]::-moz-placeholder {
+    color: #ccc;
+  }
+  &__input-text {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+  }
+  &__input-textarea {
+    width: 210px;
+    border: 2px solid #000;
+    outline: none;
+    resize: none;
+    font-size: 17px;
+    overflow: auto;
+    min-height: 140px;
+    padding: 20px 20px 0px 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .form {
 
+    &__input-radio[type="radio"] + .form__label-radio .form__indicator,
+    &__input-checkbox[type="checkbox"] + .form__label-checkbox .form__indicator {
+      position: absolute;
+      top: -10px;
+      left: -30px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #444;
+    }
+    &__input-radio[type="radio"]:checked + .form__label-radio .type__indicator::before,
+    &__input-checkbox[type="checkbox"]:checked + .form__label-checkbox .form__indicator::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 20px;
+      height: 20px;
+      background-color: #000;
+    }
+    &__input-text[type="text"],
+    &__input-text[type="tel"],
+    &__input-text[type="email"],
+    &__input-textarea[type="text"] {
+      font-size: 19px;
+    }
+    &__label-radio,
+    &__label-checkbox,
+    &__label-text {
+      font-size: 19px;
+      font-weight: bold;
+      margin: 0 0 0 0;
+    }
+    &__input-textarea {
+      width: 210px;
+      border: 2px solid #000;
+      outline: none;
+      resize: none;
+      font-size: 19px;
+      overflow: auto;
+      min-height: 140px;
+      padding: 20px 20px 0px 20px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -1,21 +1,26 @@
 @import "./variables";
 @import "./common";
 
-
 .catalog-description {
 
 
   &__block {
+    @include clearfix;
     display: flex;
     flex-direction: column;
     border: 1px solid #ececec;
     border-top: none;
+    margin: -4px 0 0 0;
   }
   &__title {
-    width: 190px;
+    width: 196px;
     margin: 30px 0 0 0;
     padding: 0 30px 0 30px;
     font-size: 17px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #000;
   }
   &__parameter {
     padding: 0 30px 0 30px;
@@ -34,7 +39,7 @@
     font-size: 15px;
     font-weight: bold;
   }
-  &__price::before {
+  &__basket::before {
     position: absolute;
     content: '';
     width: 30px;
@@ -43,8 +48,10 @@
     right: 20px;
     background: url(../img/icon-cart.svg) no-repeat;
     opacity: 0.2;
+    cursor: pointer;
   }
 }
+
 
 @media (min-width: $tablet-width) {
 
@@ -56,11 +63,12 @@
     height: 334px;
   }
   &__block {
+    margin: 0;
     width: 334px;
     border-top: 1px solid #ececec;
   }
   &__title {
-    width: 225px;
+    width: 230px;
     margin: 30px 0 0 0;
     padding: 0 30px 0 30px;
     font-size: 20px;
@@ -83,7 +91,7 @@
     font-size: 17px;
     font-weight: bold;
   }
-  &__price::before {
+  &__basket::before {
     position: absolute;
     content: '';
     width: 30px;
@@ -92,10 +100,63 @@
     right: 20px;
     background: url(../img/icon-cart.svg) no-repeat;
     opacity: 0.2;
+    cursor: pointer;
   }
 }
 }
 
 @media (min-width: $desktop-width) {
+
+ .catalog-description {
+  display: block;
+  width: 315px;
+
+
+  &__image {
+    width: 315px;
+    height: 462px;
+  }
+  &__block {
+    @include clearfix;
+    width: 313px;
+    margin: -4px 0 0 0;
+    border-top: 1px solid #ececec;
+  }
+  &__title {
+    width: 230px;
+    margin: 30px 0 0 0;
+    padding: 0 30px 0 30px;
+    font-size: 20px;
+  }
+  &__parameter {
+    padding: 0 30px 0 30px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #444;
+  }
+  &__line {
+    margin: 45px 30px 20px 30px;
+    height: 1px;
+    background: #ececec;
+  }
+  &__price {
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 0 30px 30px 30px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  &__basket::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 20px;
+    background: url(../img/icon-cart.svg) no-repeat;
+    opacity: 0.2;
+    cursor: pointer;
+  }
+}
 
 }

@@ -2,7 +2,6 @@
 @import "./mixins";
 
 .product-week {
-  border: 2px solid red;
   padding: 0 30px 0 30px;
 
   &__titles {
@@ -43,7 +42,7 @@
     width: 260px;
     height: 315px;
     margin: 0;
-    background: url(../../img/triple-set-mobile@1x.jpg) no-repeat;
+    background: url(../img/triple-set-mobile@1x.jpg) no-repeat;
     background-size: 100%;
   }
   &__order {
@@ -60,8 +59,7 @@
 
 @media (min-width: $tablet-width) {
   .product-week {
-  border: 2px solid red;
-  padding: 0 30px 0 30px;
+  padding: 0 50px 0 50px;
 
     &__titles {
       display: flex;
@@ -123,9 +121,8 @@
 }
 
 @media (min-width: $desktop-width) {
-    .product-week {
-  border: 2px solid red;
-  padding: 0 30px 0 30px;
+  .product-week {
+  padding: 0 50px 0 50px;
 
     &__titles {
       display: flex;

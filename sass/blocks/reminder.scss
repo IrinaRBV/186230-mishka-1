@@ -1,0 +1,36 @@
+@import "./variables";
+@import "../common";
+
+.reminder {
+
+  p.reminder__text{
+    font-size: 14px;
+  }
+  .btn {
+    padding: 20px 41px 15px 41px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .reminder {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 50px 50px 50px;
+
+    p.reminder__text{
+      font-size: 17px;
+    }
+    .btn {
+      padding: 20px 41px 15px 41px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reminder {
+    margin: 0 175px 0 175px;
+    padding: 0 50px 50px 50px;
+  }
+}

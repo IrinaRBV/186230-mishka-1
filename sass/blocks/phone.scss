@@ -1,0 +1,35 @@
+@import "./variables";
+@import "../common";
+
+.phone {
+  position: relative;
+}
+
+
+@media (min-width: $tablet-width) {
+  .phone {
+    display: flex;
+    margin: 0;
+    padding: 65px 50px 0 50px;
+    background-color: #f1f1f1;
+
+    & input {
+      margin: 5px 0 0 0;
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .phone {
+    display: flex;
+    margin: 0;
+    padding: 65px 50px 0 50px;
+    background-color: #f1f1f1;
+
+    & input {
+      margin: 5px 175px 0 0;
+      background-color: #f1f1f1;
+    }
+  }
+}

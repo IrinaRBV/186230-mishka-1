@@ -1,7 +1,6 @@
 @import "./mixins";
 @import "./variables";
 
-
 .breadcrumbs {
   display: none;
   list-style: none;
@@ -14,10 +13,6 @@
   }
 }
 
-
-@media (max-width: $mobile-width-only) {
-
-}
 
 @media (min-width: $tablet-width) {
   .breadcrumbs {
