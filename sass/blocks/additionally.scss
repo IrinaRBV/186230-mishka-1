@@ -1,0 +1,29 @@
+@import "./variables";
+@import "../common";
+
+.additionally {
+  position: relative;
+}
+
+
+@media (min-width: $tablet-width) {
+  .additionally {
+    display: flex;
+    padding: 50px 50px 50px 50px;
+
+    & textarea {
+      margin: 0 0 0 140px;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally {
+    padding: 50px 50px 50px 50px;
+
+    & textarea {
+      margin: 0 175px 0 40px;
+    }
+  }
+}

@@ -2,7 +2,6 @@
 @import "./common";
 
 .about-us {
-  border: 2px solid red;
   padding: 0 30px 0 30px;
 
   &__list {
@@ -22,11 +21,10 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-  border: 2px solid red;
-  padding: 0 30px 0 30px;
+  padding: 0 50px 0 50px;
 
     &__title {
-      margin-left: 50px;
+      margin-left: 0;
       font-size: 43px;
     }
     &__list {
@@ -37,7 +35,8 @@
       justify-content: flex-start;
       width: 668px;
       height: 510px;
-      margin: 10px 0 0 10px;
+      margin: 0;
+      padding: 0;
     }
     &__item {
       height: 125px;
@@ -58,9 +57,8 @@
 
 
 @media (min-width: $desktop-width) {
-    .about-us {
-  border: 2px solid red;
-  padding: 0 30px 0 30px;
+  .about-us {
+  padding: 0 50px 0 50px;
 
     &__title {
       margin-left: 175px;

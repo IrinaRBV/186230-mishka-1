@@ -1,0 +1,57 @@
+@import "./variables";
+@import "../common";
+
+.fio {
+  position: relative;
+
+  &__list {
+    padding: 0;
+  }
+  &__item {
+    margin: 0px 0 20px 0;
+    list-style: none;
+  }
+
+}
+
+
+@media (min-width: $tablet-width) {
+  .fio {
+    display: flex;
+    padding: 60px 50px 50px 50px;
+
+    &__list {
+      width: 100%;
+      margin: 0;
+      padding: 10px 0 0 0;
+    }
+    &__item {
+      display: flex;
+      align-items: baseline;
+      margin: 0px 0 20px 0;
+      list-style: none;
+    }
+    &__item input {
+      margin: 0 0 0 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fio {
+    padding: 60px 50px 50px 50px;
+
+    &__list {
+      margin: 0 175px 0 0;
+    }
+    &__item {
+      display: flex;
+      align-items: baseline;
+      margin: 0px 0 20px 0;
+      list-style: none;
+    }
+    &__item input {
+      margin: 0 0 0 30px;
+    }
+  }
+}

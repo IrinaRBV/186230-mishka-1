@@ -7,7 +7,9 @@ h2 {
 }
 
 .keyword-h2 {
+  text-transform: uppercase;
   font-size: 17px;
+  font-weight: bold;
   color: $color-turquoise;
 }
 
@@ -22,6 +24,15 @@ svg {
 
 .wavy-line {
 
+}
+
+.straight-line {
+  position: absolute;
+  top: 23px;
+  right: 0px;
+  height: 1px;
+  width: 190px;
+  background-color: #62d1ba;
 }
 
 .text-depiction {
@@ -41,4 +52,21 @@ svg {
   font-weight: bold;
   text-align: center;
   border: 2px solid #444444;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .straight-line {
+    display: none;
+  }
+  .keyword-h2 {
+    width: 167px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .keyword-h2 {
+    margin: 20px 0 0 40px;
+  }
 }

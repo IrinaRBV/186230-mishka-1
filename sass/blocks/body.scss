@@ -2,8 +2,6 @@
 @import "./mixins";
 
 .body {
-  @include font-face;
-  @include font-face-bold;
   color: #000;
 }
 

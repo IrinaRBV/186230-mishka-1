@@ -16,5 +16,22 @@ navBtn.addEventListener('click', function() {
     }
 });
 
+
 //popap
 
+var popap = document.querySelector('.popap');
+var popapWrap = document.querySelector('.popap__wrap');
+var popapBtn = document.querySelector('.js-open-popap');
+
+popap.classList.remove('popap--js');
+
+popapBtn.addEventListener('click', function() {
+  if (popap.classList.contains('popap--closed')) {
+    popap.classList.remove('popap--closed');
+    popap.classList.add('popap--js');
+    }
+    else {
+      popap.classList.add('popap--closed');
+      popap.classList.remove('popap--js');
+    }
+});
