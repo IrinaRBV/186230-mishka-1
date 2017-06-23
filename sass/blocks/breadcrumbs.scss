@@ -11,6 +11,12 @@
     text-decoration: none;
     color: #000;
   }
+  &__item a:hover {
+    color: #8d8d8d;
+  }
+  &__item a:focus {
+    color: #cacaca;
+  }
 }
 
 
