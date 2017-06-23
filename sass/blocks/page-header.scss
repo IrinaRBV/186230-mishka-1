@@ -19,6 +19,21 @@
     margin: 20px 10px 20px 10px;
     fill: #000000;
   }
+  &__logo .Layer_1 {
+    display: none;
+  }
+  &__logo .Layer_2 {
+    display: block;
+  }
+  &__logo .Layer_2:hover {
+    opacity: 0.6;
+  }
+  &__logo .Layer_2:focus {
+    opacity: 0.3;
+  }
+  &__logo .Layer_3 {
+    display: none;
+  }
   &__logo a {
     display: inline-block;
   }
@@ -31,8 +46,22 @@
 
 
     &__logo {
-    top: 0;
-    left: 50px;
+      width: 165px;
+      height: 95px;
+      top: 0;
+      left: 17px;
+    }
+    &__logo .Layer_1 {
+      display: block;
+    }
+    &__logo .Layer_2 {
+      display: none;
+    }
+    &__logo .Layer_1:hover {
+      opacity: 0.6;
+    }
+    &__logo .Layer_1:focus {
+      opacity: 0.3;
     }
   }
 }
@@ -45,6 +74,19 @@
 
     &__logo {
       left: 500px;
+      top: -10px;
+    }
+    &__logo .Layer_3 {
+      display: block;
+    }
+    &__logo .Layer_1 {
+      display: none;
+    }
+    &__logo .Layer_3:hover {
+      opacity: 0.6;
+    }
+    &__logo .Layer_3:focus {
+      opacity: 0.3;
     }
   }
 }

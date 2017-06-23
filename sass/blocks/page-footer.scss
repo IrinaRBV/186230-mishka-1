@@ -9,6 +9,7 @@
 
 
   &__copyright {
+    position: relative;
     display: flex;
     justify-content: center;
     margin: 0 0 30px 0;
@@ -18,6 +19,46 @@
     font-weight: bold;
     margin: 0 25px 0 0;
     padding: 0;
+  }
+  &__title a {
+    text-decoration: none;
+    color: #000;
+  }
+  &__copyright-link {
+    margin: -5px 0 0 0;
+  }
+  &__copyright-link:focus {
+    opacity: 0.3;
+  }
+  &__copyright-link svg {
+    position: absolute;
+    padding: 0 0 0 141px;
+    top: -4px;
+    right: 35px;
+  }
+  &__copyright-link svg:hover {
+    fill: #46c1ae;
+  }
+  &__copyright-link svg:focus {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+  &__logo {
+    display: block;
+    content: '';
+    width: 115px;
+    height: 50px;
+    margin: auto 0 auto 0;
+  }
+  &__logo svg {
+    fill: #000;
+  }
+  &__logo svg:hover {
+    fill: #51c4b2;
+  }
+  &__logo svg:focus {
+    fill: #51c4b2;
+    opacity: 0.3;
   }
   &__logo {
     display: none;
@@ -38,9 +79,13 @@
 
 
     &__copyright {
+      position: relative;
       display: flex;
       justify-content: center;
-      margin: auto 0 auto 0;
+      margin: auto 30px auto 0;
+    }
+    &__copyright-link:focus {
+      opacity: 0.3;
     }
     &__title {
       font-size: 19px;
@@ -48,13 +93,35 @@
       margin: 0 25px 0 0;
       padding: 0;
     }
+    &__copyright-link svg {
+      position: absolute;
+      padding: 0 0 0 141px;
+      top: -4px;
+      right: -15px;
+    }
+    &__copyright-link svg:hover {
+      fill: #46c1ae;
+    }
+    &__copyright-link svg:focus {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
     &__logo {
       display: block;
       content: '';
       width: 115px;
       height: 50px;
       margin: auto 0 auto 0;
-      border: 1px solid green;
+    }
+    &__logo svg {
+      fill: #000;
+    }
+    &__logo svg:hover {
+      fill: #51c4b2;
+    }
+    &__logo svg:focus {
+      fill: #51c4b2;
+      opacity: 0.3;
     }
   }
 }

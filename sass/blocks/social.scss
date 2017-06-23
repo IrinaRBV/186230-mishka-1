@@ -10,6 +10,15 @@
     font-size: 0;
     padding-left: 30px;
   }
+  &__link svg {
+    fill: #231F20;
+  }
+  &__link svg:hover {
+    fill: #46c1ae;
+  }
+  &__link svg:focus {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

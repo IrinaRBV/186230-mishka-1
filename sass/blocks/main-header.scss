@@ -2,39 +2,69 @@
 @import "./mixins";
 
 .main-header {
-  height: 283px;
-  background-color: #f1f1f1;
-
+  position: relative;
+  height: 270px;
+  width: 320px;
+  background-color: #f9f9f9;
 
   &--color {
   height: 177px;
   background: #f1f1f1;
   }
-  &--img {
-    display: block;
-    margin: 0 auto 0 auto;
-    background: url(../img/hero-mobile@1x.jpg) no-repeat;
-    background-size: 100%;
+  &__img {
+    background-color: #f9f9f9f;
+    width: 100%;
+    height: auto;
   }
   &__title {
+    position: absolute;
+    top: 35px;
+    left: 30px;
     width: 260px;
-    margin: 0 auto 0 auto;
-    padding: 40px 0 0 0;
+    margin: 0;
+    padding: 0;
     font-size: 27px;
+    line-height: 30px;
     font-weight: bold;
     text-align: center;
+  }
+  &__title--size {
+    top: 70px;
   }
 }
 
 @media (min-width: $tablet-width) {
 
   .main-header {
+    position: relative;
     margin-top: -52px;
-    height: 549px;
-    background-color: #f1f1f1;
+    width: 768px;
+    height: 540px;
+    background-color: #f9f9f9;
+    z-index: -10;
 
+    &__title {
+      width: 630px;
+      position: absolute;
+      top: 100px;
+      left: 50px;
+      padding: 0;
+      font-size: 43px;
+      line-height: 50px;
+      font-weight: bold;
+      text-align: center;
+    }
     &--color {
       height: 240px;
+      background: #f1f1f1;
+    }
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+    &__img img {
+      width: 100%;
+      height: auto;
     }
   }
 }
@@ -42,12 +72,32 @@
 @media (min-width: $desktop-width) {
 
   .main-header {
+    position: relative;
+    height: 758px;
+    background-color: #f9f9f9;
+    width: 1150px;
 
-    height: 746px;
-    background-color: #f1f1f1;
-
+    &__title {
+      width: 630px;
+      position: absolute;
+      top: 155px;
+      left: 250px;
+      padding: 0;
+      font-size: 53px;
+      line-height: 57px;
+      font-weight: bold;
+      text-align: center;
+    }
+    &__title--size {
+      top: 100px;
+    }
     &--color {
-      height: 272px;
+      height: 255px;
+      background: #f1f1f1;
+    }
+    &__img {
+      width: 100%;
+      height: auto;
     }
   }
 }
