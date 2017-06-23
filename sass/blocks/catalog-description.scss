@@ -68,7 +68,7 @@
 
 @media (min-width: $tablet-width) {
 
- .catalog-description {
+  .catalog-description {
   display: flex;
 
   &__image {
@@ -118,7 +118,7 @@
 
 @media (min-width: $desktop-width) {
 
- .catalog-description {
+  .catalog-description {
   display: block;
   width: 315px;
 

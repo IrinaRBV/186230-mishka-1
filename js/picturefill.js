@@ -7,7 +7,7 @@
  * Firefox's early picture implementation (prior to FF41) is static and does
  * not react to viewport changes. This tiny module fixes this.
  */
- (function(window) {
+  (function(window) {
   /*jshint eqnull:true */
   var ua = navigator.userAgent;
 
@@ -1439,7 +1439,7 @@
     pf.fillImg = noop;
   } else {
 
-     // Set up picture polyfill by polling the document
+      // Set up picture polyfill by polling the document
     (function() {
       var isDomReady;
       var regReady = window.attachEvent ? /d$|^c/ : /d$|^c|^i/;
