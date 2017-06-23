@@ -3,6 +3,18 @@
 
 .phone {
   position: relative;
+
+  & input {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 222px 6px;
+  }
+  & input:hover {
+    background-image: url("../img/icon-phone-hover.svg");
+    background-repeat: no-repeat;
+    background-position: 222px 6px;
+  }
+
 }
 
 
@@ -14,8 +26,17 @@
     background-color: #f1f1f1;
 
     & input {
+      position: relative;
       margin: 5px 0 0 0;
       background-color: #f1f1f1;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 493px 10px;
+    }
+    & input:hover {
+      background-image: url("../img/icon-phone-hover.svg");
+      background-repeat: no-repeat;
+      background-position: 493px 10px;
     }
   }
 }
@@ -30,6 +51,14 @@
     & input {
       margin: 5px 175px 0 0;
       background-color: #f1f1f1;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 670px 10px;
+    }
+    & input:hover {
+      background-image: url("../img/icon-phone-hover.svg");
+      background-repeat: no-repeat;
+      background-position: 670px 10px;
     }
   }
 }

@@ -2,7 +2,7 @@
 @import "./mixins";
 
 .products-links {
-  margin: -120px 0 0 0;
+  margin: -101px 0 0 0;
   @include clearfix;
 
   &__item {
@@ -14,6 +14,7 @@
     position: absolute;
     top: 20px;
     right: 30px;
+    padding: 0 0 0 248px;
     fill: #231F20;
     opacity: 0.3;
   }
@@ -32,16 +33,25 @@
   &__item--color svg {
     right: 20px;
   }
+  &__item svg:hover {
+    opacity: 0.7;
+  }
+  &__item svg:focus {
+    opacity: 0.3;
+  }
+  &__title:focus {
+  opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
 
   .products-links {
+    position: relative;
     display: flex;
     flex: 1;
     width: 668px;
-    min-height: 130px;
-    margin: -134px auto 0 auto;
+    margin: -121px auto 0 auto;
     padding: 0;
 
     &__item {
@@ -51,12 +61,13 @@
       position: absolute;
       top: 20px;
       right: 30px;
+      padding: 0px 0 0 263px;
       fill: #231F20;
       opacity: 0.3;
     }
     &__title {
       margin: 0;
-      padding: 30px 175px 53px 30px;
+      padding: 30px 175px 44px 30px;
       width: 130px;
       color: #ffffff;
       font-size: 20px;
@@ -75,6 +86,7 @@
 
   .products-links {
     width: 1050px;
+    margin: -130px auto 0 auto;
 
     &__item {
       width: 525px;
@@ -83,6 +95,7 @@
       position: absolute;
       top: 20px;
       right: 30px;
+      padding: 0px 0 0 455px;
       fill: #231F20;
       opacity: 0.3;
     }
@@ -93,11 +106,11 @@
       color: #ffffff;
       font-size: 20px;
       font-weight: bold;
-     }
+    }
     &__item--color {
       background: #56c3b2;
     }
-     &__item--color svg {
+    &__item--color svg {
       right: 30px;
     }
   }

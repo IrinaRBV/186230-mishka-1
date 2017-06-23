@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
 
+
   &__input-radio[type="radio"] {
     display: none;
   }
@@ -36,11 +37,23 @@
   &__input-text[type="email"],
   &__input-textarea[type="text"] {
     font-size: 17px;
+    line-height: 18px;
+  }
+  &__input-text[type="text"]:hover,
+  &__input-text[type="tel"]:hover,
+  &__input-text[type="email"]:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+  &__input-text[type="text"]:focus,
+  &__input-text[type="tel"]:focus,
+  &__input-text[type="email"]:focus {
+    border-bottom: 2px solid #62d1ba;
   }
   &__label-radio,
   &__label-checkbox,
   &__label-text {
     font-size: 17px;
+    line-height: 18px;
     font-weight: bold;
     margin: 0 0 0 0;
     cursor: pointer;
@@ -48,7 +61,6 @@
   &__input-text[type="text"]::-webkit-input-placeholder,
   &__input-textarea[type="text"]::-webkit-input-placeholder {
     color: #ccc;
-
   }
   &__input-text[type="text"]::-moz-placeholder,
   &__input-textarea[type="text"]::-moz-placeholder {
@@ -78,6 +90,12 @@
     overflow: auto;
     min-height: 140px;
     padding: 20px 20px 0px 20px;
+  }
+  &__input-textarea:hover {
+    border: 2px solid #62d1ba;
+  }
+  &__input-textarea:focus {
+    border: 2px solid #62d1ba;
   }
 }
 

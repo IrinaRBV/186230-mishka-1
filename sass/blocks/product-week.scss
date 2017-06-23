@@ -24,8 +24,10 @@
     margin-bottom: 40px;
   }
   &__depiction {
-    line-height: 20px;
     width: 245px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #444444;
   }
   &__items {
     margin-bottom: 30px;
@@ -42,8 +44,7 @@
     width: 260px;
     height: 315px;
     margin: 0;
-    background: url(../img/triple-set-mobile@1x.jpg) no-repeat;
-    background-size: 100%;
+    background-color: #f9f9f9f;
   }
   &__order {
     text-align: center;
@@ -88,6 +89,8 @@
     }
     &__depiction {
       margin-bottom: 50px;
+      font-size: 17px;
+      line-height: 30px;
     }
     &__items {
       margin-bottom: 30px;

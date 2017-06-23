@@ -26,14 +26,17 @@
     width: 155px;
   }
   &__value--line {
+    cursor: pointer;
     border-bottom: 1px solid #62d1ba;
+  }
+  &__value--hover:hover {
+    color: #62d1ba;
   }
   &__map {
     width: 320;
     height: 457px;
     padding: 0;
     margin: 0;
-    background: url(../img/map-mobile@1x.jpg) no-repeat;
   }
   & .btn {
     margin: 40px 30px 40px 30px;
@@ -44,11 +47,21 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;;
     flex-wrap: no-wrap;
 
+    &:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 30px;
+      width: 47px;
+      height: 82px;
+      background: url(../img/icon-flag.svg) no-repeat;
+    }
     &__title {
       margin-left: 15px;
       padding: 0 30px 0 30px;
@@ -75,11 +88,11 @@
       width: 220px;
     }
     &__map {
-      width: 320px;
+      width: 768px;
       height: 457px;
       padding: 0;
       margin: 0;
-      background: url(../img/map-mobile@1x.jpg) no-repeat;
+
     }
     & .btn {
       margin: 40px auto 40px auto;
@@ -94,8 +107,17 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;;
+    align-items: flex-start;
 
+    &:before {
+      content: '';
+      position: absolute;
+      left: 75px;
+      top: 30px;
+      width: 47px;
+      height: 82px;
+      background: url(../img/icon-flag.svg) no-repeat;
+    }
     &__title {
       margin-left: 175px;
       padding: 0;
@@ -115,7 +137,7 @@
     & p {
       vertical-align: top;
       padding: 10px 25px 0 0;
-      line-height: 35px;
+      line-height: 30px;
     }
     &__value {
       width: 220px;
@@ -125,13 +147,12 @@
     }
     &__map {
       position: absolute;
-      width: 320px;
+      width: 525px;
       height: 457px;
       padding: 0;
       margin: 0;
       top: 30px;
       right: 50px;
-      background: url(../img/map-mobile@1x.jpg) no-repeat;
     }
     & .btn {
       margin: 40px 30px 40px 175px;

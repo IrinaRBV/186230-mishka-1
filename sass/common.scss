@@ -23,7 +23,24 @@ svg {
 }
 
 .wavy-line {
+  width: 100%;
+  height: 7px;
+  &__m {
+    display: block;
+  }
+  &__t {
+    display: none;
+  }
+  &__d {
+    display: none;
+  }
+  &__bg-zigzag-fill {
+    display: none;
+  }
+}
 
+.zigzag-line {
+  display: none;
 }
 
 .straight-line {
@@ -55,6 +72,14 @@ svg {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: #444;
+  color: #fff;
+}
+.btn:focus {
+  color: #8d8d8d;
+}
+
 @media (min-width: $tablet-width) {
   .straight-line {
     display: none;
@@ -63,10 +88,61 @@ svg {
     width: 167px;
   }
 
+  .wavy-line {
+    width: 100%;
+    height: 17px;
+
+    &__m {
+      display: none;
+    }
+    &__t {
+      display: block;
+    }
+    &__d {
+      display: none;
+    }
+    &__bg-zigzag-fill {
+      display: block;
+    }
+  }
+
+  .zigzag-line {
+    position: absolute;
+    display: block;
+    top: 610px;
+    width: 100%;
+    height: 17px;
+    background: url(../img/bg-zigzag-fill.svg);
+  }
 }
 
 @media (min-width: $desktop-width) {
   .keyword-h2 {
     margin: 20px 0 0 40px;
+  }
+  .wavy-line {
+    width: 100%;
+    height: 23px;
+    &__m {
+      display: none;
+    }
+    &__t {
+      display: none;
+    }
+    &__d {
+      display: block;
+    }
+    &__bg-zigzag-fill {
+      display: block;
+    }
+  }
+
+  .zigzag-line {
+    position: absolute;
+    display: block;
+    top: 832px;
+    width: 100%;
+    height: 23px;
+    background: url(../img/bg-zigzag-fill.svg);
   }
 }

@@ -5,7 +5,6 @@
 
 
   &__block {
-    @include clearfix;
     display: flex;
     flex-direction: column;
     border: 1px solid #ececec;
@@ -17,14 +16,22 @@
     margin: 30px 0 0 0;
     padding: 0 30px 0 30px;
     font-size: 17px;
+    line-height: 24px;
   }
   &__link {
     text-decoration: none;
     color: #000;
   }
+  &__link:hover {
+    opacity: 0.6;
+  }
+  &__link:focus {
+    opacity: 0.3;
+  }
   &__parameter {
     padding: 0 30px 0 30px;
     font-size: 13px;
+    line-height: 30px;
     font-weight: normal;
     color: #444;
   }
@@ -37,25 +44,31 @@
     position: relative;
     padding: 0 30px 30px 30px;
     font-size: 15px;
+    line-height: 24px;
     font-weight: bold;
   }
-  &__basket::before {
+  &__basket svg {
     position: absolute;
-    content: '';
-    width: 30px;
-    height: 30px;
     top: 0;
-    right: 20px;
-    background: url(../img/icon-cart.svg) no-repeat;
+    right: -40px;
+    fill: #444;
     opacity: 0.2;
     cursor: pointer;
+  }
+  &__basket:hover svg {
+    fill: #62d1ba;
+    opacity: 1;
+  }
+  &__basket:focus svg {
+    fill: #62d1ba;
+    opacity: 0.2;
   }
 }
 
 
 @media (min-width: $tablet-width) {
 
- .catalog-description {
+  .catalog-description {
   display: flex;
 
   &__image {
@@ -63,6 +76,7 @@
     height: 334px;
   }
   &__block {
+    @include clearfix;
     margin: 0;
     width: 334px;
     border-top: 1px solid #ececec;
@@ -72,6 +86,7 @@
     margin: 30px 0 0 0;
     padding: 0 30px 0 30px;
     font-size: 20px;
+    line-height: 24px;
   }
   &__parameter {
     padding: 0 30px 0 30px;
@@ -80,7 +95,7 @@
     color: #444;
   }
   &__line {
-    margin: 150px 30px 10px 30px;
+    margin: 168px 30px 10px 30px;
     height: 1px;
     background: #ececec;
   }
@@ -91,14 +106,10 @@
     font-size: 17px;
     font-weight: bold;
   }
-  &__basket::before {
+  &__basket svg {
     position: absolute;
-    content: '';
-    width: 30px;
-    height: 30px;
     top: 0;
-    right: 20px;
-    background: url(../img/icon-cart.svg) no-repeat;
+    right: -40px;
     opacity: 0.2;
     cursor: pointer;
   }
@@ -107,7 +118,7 @@
 
 @media (min-width: $desktop-width) {
 
- .catalog-description {
+  .catalog-description {
   display: block;
   width: 315px;
 
@@ -146,17 +157,12 @@
     font-size: 17px;
     font-weight: bold;
   }
-  &__basket::before {
+  &__basket svg {
     position: absolute;
-    content: '';
-    width: 30px;
-    height: 30px;
     top: 0;
-    right: 20px;
-    background: url(../img/icon-cart.svg) no-repeat;
+    right: -40px;
     opacity: 0.2;
     cursor: pointer;
   }
 }
-
 }

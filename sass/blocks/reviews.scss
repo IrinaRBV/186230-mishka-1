@@ -4,6 +4,9 @@
 .reviews {
   padding: 0 30px 0 30px;
 
+  &__img {
+    display: none;
+  }
   &__items {
     width: 260px;
   }
@@ -42,9 +45,23 @@
   }
   &__btn--left {
     position: relative;
+    outline: none;
   }
-    &__btn--right {
+  &__btn--right {
     position: relative;
+    outline: none;
+  }
+  &__btn--left:hover {
+    opacity: 0.6;
+  }
+  &__btn--left:focus {
+    opacity: 0.3;
+  }
+  &__btn--right:hover {
+    opacity: 0.6;
+  }
+  &__btn--right:focus {
+    opacity: 0.3;
   }
   &__btn--left:before {
     content: '';
@@ -77,6 +94,15 @@
     justify-content: space-between;
     padding: 0 50px 0 50px;
 
+    &__img {
+      display: block;
+      position: absolute;
+      width: 350px;
+      height: 450px;
+      top: 0;
+      left: 0;
+      z-index: -10;
+    }
     &__title {
       font-size: 43px;
     }
@@ -94,12 +120,6 @@
       margin: 0;
       padding: 0;
     }
-    &__depiction {
-      width: 570px;
-      margin-bottom: 50px;
-      line-height: 25px;
-      font-size: 17px;
-    }
     &__author-name{
       display: block;
       margin-bottom: 15px;
@@ -114,7 +134,7 @@
       margin: 0;
       padding: 0;
     }
-     &__btn {
+    &__btn {
       flex: 1;
       height: 50px;
       background: #fff;
@@ -122,26 +142,21 @@
       font-size: 0;
     }
     & .btn {
-    position: absolute;
-    margin: 0 0 0 0;
-    top: 70px;
-    right: 50px;
-    width: 170px;
-    height: 20px;
-    margin: 0 0 0 0;
-    padding: 15px 10px 15px 20px;
+      position: absolute;
+      margin: 0 0 0 0;
+      top: 70px;
+      right: 50px;
+      width: 170px;
+      height: 20px;
+      margin: 0 0 0 0;
+      padding: 15px 20px 15px 20px;
     }
   }
-
-  .reviews:before {
-    content: '';
-    position: absolute;
-    width: 350px;
-    height: 450px;
-    top: 0;
-    left: 0;
-    background: url(../img/review@1x.jpg) no-repeat;
-    z-index: -10;
+  p.reviews__depiction {
+    width: 570px;
+    margin-bottom: 50px;
+    line-height: 30px;
+    font-size: 17px;
   }
 }
 
@@ -152,6 +167,14 @@
     justify-content: space-between;
     padding: 0 50px 0 50px;
 
+    &__img {
+      position: absolute;
+      width: 350px;
+      height: 450px;
+      top: 0;
+      left: 50px;
+      z-index: -10;
+    }
     &__title {
       font-size: 43px;
     }
@@ -179,16 +202,5 @@
       font-size: 17px;
       font-weight: bold;
     }
-  }
-
-  .reviews:before {
-    content: '';
-    position: absolute;
-    width: 350px;
-    height: 450px;
-    top: 0;
-    left: 50px;
-    background: url(../img/review@1x.jpg) no-repeat;
-    z-index: -10;
   }
 }
