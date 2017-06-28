@@ -12,32 +12,17 @@
   &__input-checkbox[type="checkbox"] {
     display: none;
   }
-  &__input-radio[type="radio"] + .form__label-radio .form__indicator,
-  &__input-checkbox[type="checkbox"] + .form__label-checkbox .form__indicator {
-    position: absolute;
-    top: -3px;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #444;
-    cursor: pointer;
-  }
-  &__input-radio[type="radio"]:checked + .form__label-radio .type__indicator::before,
-  &__input-checkbox[type="checkbox"]:checked + .form__label-checkbox .form__indicator::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 10px;
-    height: 10px;
-    background-color: #000;
-  }
   &__input-text[type="text"],
   &__input-text[type="tel"],
   &__input-text[type="email"],
   &__input-textarea[type="text"] {
     font-size: 17px;
     line-height: 18px;
+    padding: 14px 0 15px 0px;
+  }
+  &__input--phone[type=tel],
+  &__input--email[type="email"] {
+    padding: 18px 0 16px;
   }
   &__input-text[type="text"]:hover,
   &__input-text[type="tel"]:hover,
@@ -82,14 +67,14 @@
     outline: none;
   }
   &__input-textarea {
-    width: 210px;
+    width: 226px;
     border: 2px solid #000;
-    outline: none;
+    outline: 0;
     resize: none;
     font-size: 17px;
     overflow: auto;
-    min-height: 140px;
-    padding: 20px 20px 0px 20px;
+    height: 128px;
+    padding: 10px 16px 0;
   }
   &__input-textarea:hover {
     border: 2px solid #62d1ba;
@@ -102,8 +87,8 @@
 @media (min-width: $tablet-width) {
   .form {
 
-    &__input-radio[type="radio"] + .form__label-radio .form__indicator,
-    &__input-checkbox[type="checkbox"] + .form__label-checkbox .form__indicator {
+    &__input-radio[type="radio"] + .form__label-radio .indicator-radio,
+    &__input-checkbox[type="checkbox"] + .form__label-checkbox .indicator--checkbox {
       position: absolute;
       top: -10px;
       left: -30px;
@@ -111,8 +96,8 @@
       height: 40px;
       border: 1px solid #444;
     }
-    &__input-radio[type="radio"]:checked + .form__label-radio .type__indicator::before,
-    &__input-checkbox[type="checkbox"]:checked + .form__label-checkbox .form__indicator::before {
+    &__input-radio[type="radio"]:checked + .form__label-radio .indicator-radio::before,
+    &__input-checkbox[type="checkbox"]:checked + .form__label-checkbox .indicator--checkbox::before {
       content: "";
       position: absolute;
       top: 10px;
@@ -126,6 +111,12 @@
     &__input-text[type="email"],
     &__input-textarea[type="text"] {
       font-size: 19px;
+      padding: 11px 11px 14px;
+    }
+    &__input--phone[type=tel],
+    &__input--email[type="email"] {
+      padding: 0 0 14px 16px;
+      margin: 5px 0 19px 48px;
     }
     &__label-radio,
     &__label-checkbox,
@@ -135,19 +126,34 @@
       margin: 0 0 0 0;
     }
     &__input-textarea {
-      width: 210px;
       border: 2px solid #000;
-      outline: none;
+      outline: 0;
       resize: none;
       font-size: 19px;
       overflow: auto;
-      min-height: 140px;
-      padding: 20px 20px 0px 20px;
+      height: 130px;
+      padding: 8px 24px 0 14px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
+ .form {
 
 
+  &__input-text[type="text"],
+  &__input-text[type="tel"],
+  &__input-text[type="email"],
+  &__input-textarea[type="text"] {
+    padding: 16px 0 20px;
+  }
+  &__input--phone[type=tel],
+  &__input--email[type="email"] {
+    padding: 0 0 14px 16px;
+    margin: 52px 0 0 48px;
+  }
+  &__input--email[type="email"] {
+    margin-top: 35px;
+  }
+}
 }

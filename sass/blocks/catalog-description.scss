@@ -13,7 +13,7 @@
   }
   &__title {
     width: 196px;
-    margin: 30px 0 0 0;
+    margin: 26px 0 0 0;
     padding: 0 30px 0 30px;
     font-size: 17px;
     line-height: 24px;
@@ -30,41 +30,36 @@
   }
   &__parameter {
     padding: 0 30px 0 30px;
+    margin: 5px 0 0 0px;
     font-size: 13px;
     line-height: 30px;
     font-weight: normal;
     color: #444;
   }
-  &__line {
-    margin: 30px 30px 30px 30px;
-    height: 1px;
-    background: #ececec;
-  }
   &__price {
-    position: relative;
-    padding: 0 30px 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 30px 0 30px;
+    padding: 18px 0 26px 0;
+    border-top: 1px solid #ececec;
     font-size: 15px;
     line-height: 24px;
     font-weight: bold;
   }
-  &__basket svg {
-    position: absolute;
-    top: 0;
-    right: -40px;
+  &__basket {
     fill: #444;
     opacity: 0.2;
     cursor: pointer;
   }
-  &__basket:hover svg {
+  &__basket:hover {
     fill: #62d1ba;
     opacity: 1;
   }
-  &__basket:focus svg {
+  &__basket:focus{
     fill: #62d1ba;
     opacity: 0.2;
   }
 }
-
 
 @media (min-width: $tablet-width) {
 
@@ -83,7 +78,7 @@
   }
   &__title {
     width: 230px;
-    margin: 30px 0 0 0;
+    margin: 23px 0 0 0;
     padding: 0 30px 0 30px;
     font-size: 20px;
     line-height: 24px;
@@ -94,22 +89,12 @@
     font-weight: normal;
     color: #444;
   }
-  &__line {
-    margin: 168px 30px 10px 30px;
-    height: 1px;
-    background: #ececec;
-  }
   &__price {
-    position: relative;
-    margin: 0 0 0 0;
-    padding: 0 30px 30px 30px;
+    margin: 179px 30px 0 30px;
     font-size: 17px;
     font-weight: bold;
   }
-  &__basket svg {
-    position: absolute;
-    top: 0;
-    right: -40px;
+  &__basket{
     opacity: 0.2;
     cursor: pointer;
   }
@@ -130,13 +115,13 @@
   &__block {
     @include clearfix;
     width: 313px;
-    margin: -4px 0 0 0;
+    margin: -6px 0 0;
     border-top: 1px solid #ececec;
   }
   &__title {
     width: 230px;
-    margin: 30px 0 0 0;
-    padding: 0 30px 0 30px;
+    margin: 26px 0 0 0;
+    padding: 0 27px;
     font-size: 20px;
   }
   &__parameter {
@@ -145,22 +130,13 @@
     font-weight: normal;
     color: #444;
   }
-  &__line {
-    margin: 45px 30px 20px 30px;
-    height: 1px;
-    background: #ececec;
-  }
   &__price {
-    position: relative;
-    margin: 0 0 0 0;
-    padding: 0 30px 30px 30px;
+    margin: 43px 30px 0 30px;
     font-size: 17px;
     font-weight: bold;
   }
-  &__basket svg {
-    position: absolute;
-    top: 0;
-    right: -40px;
+  &__basket {
+    margin: 0;
     opacity: 0.2;
     cursor: pointer;
   }

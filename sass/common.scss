@@ -7,10 +7,21 @@ h2 {
 }
 
 .keyword-h2 {
+  position: relative;
   text-transform: uppercase;
   font-size: 17px;
   font-weight: bold;
   color: $color-turquoise;
+}
+
+.keyword-h2--line:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -2px;
+  height: 1px;
+  width: 198px;
+  background-color: #62d1ba;
 }
 
 .title-h2 {
@@ -43,15 +54,6 @@ svg {
   display: none;
 }
 
-.straight-line {
-  position: absolute;
-  top: 23px;
-  right: 0px;
-  height: 1px;
-  width: 190px;
-  background-color: #62d1ba;
-}
-
 .text-depiction {
   font-weight: normal;
   font-size: 15px;
@@ -60,7 +62,7 @@ svg {
 
 .btn {
   display: inline-block;
-  padding: 20px 80px 20px 80px;
+  padding: 14px 83px;
   text-transform: uppercase;
   text-decoration: none;
   color: #444444;
@@ -86,6 +88,10 @@ svg {
   }
   .keyword-h2 {
     width: 167px;
+
+    &--line:before {
+      display: none;
+    }
   }
 
   .wavy-line {
@@ -109,10 +115,16 @@ svg {
   .zigzag-line {
     position: absolute;
     display: block;
-    top: 610px;
-    width: 100%;
+    bottom: 8px;
     height: 17px;
-    background: url(../img/bg-zigzag-fill.svg);
+    z-index: 10;
+
+    & svg {
+      width: 100%;
+    }
+    &--size {
+      bottom: 11px;
+    }
   }
 }
 
@@ -140,9 +152,7 @@ svg {
   .zigzag-line {
     position: absolute;
     display: block;
-    top: 832px;
-    width: 100%;
+    bottom: 8px;
     height: 23px;
-    background: url(../img/bg-zigzag-fill.svg);
   }
 }

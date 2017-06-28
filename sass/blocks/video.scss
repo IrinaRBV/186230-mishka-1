@@ -7,8 +7,8 @@
 
     &__title {
       position: relative;
-      margin: 30px 0 30px 0;
-      padding: 0 0 0 70px;
+      margin: 22px 0;
+      padding: 0 0 0 91px;
       line-height: 25px;
       text-align: left;
     }
@@ -17,33 +17,33 @@
       content: '';
       width: 30px;
       height: 30px;
-      top: 8px;
-      left: 20px;
+      top: 7px;
+      left: 35px;
       background: url(../img/icon-video.svg) no-repeat;
     }
     &__img {
       position: relative;
-      margin: 0 0 35px 0;
+      margin: 0 0 26px 0;
       padding: 0;
       width: 257px;
     }
     &__img svg {
       position: absolute;
-      top: 37px;
-      left: 75px;
+      top: 41px;
+      left: 80px;
       cursor: pointer;
     }
     &__depiction {
-      width: 205px;
-      margin: 0 0 30px 0;
-      padding: 0 0 0 30px;
+      width: 185px;
+      margin: 0 0 23px 0;
+      padding: 0 0 0 35px;
       text-align: left;
       line-height: 24px;
       font-size: 13px;
     }
     & .btn {
       margin: 0 auto 30px auto;
-      padding: 16px 22px 16px 22px;
+      padding: 16px 25px;
       line-height: 16px;
     }
 }
@@ -62,9 +62,9 @@
 
     &__title {
       position: absolute;
-      margin: 0 0 0 60px;
+      margin: 0 0 0 76px;
       width: 300px;
-      bottom: 190px;
+      bottom: 224px;
       left: 0;
       text-align: left;
       font-size: 20px;
@@ -76,32 +76,32 @@
       width: 30px;
       height: 30px;
       top: -5px;
-      left: -18px;
+      left: -35px;
       background: url(../img/icon-video.svg) no-repeat;
       z-index: 10;
     }
     &__img {
       position: relative;
-      margin: 0 0 70px 0;
+      margin: 0 0 97px 0;
       width: 663px;
-      height: 456px;
+      height: 447px;
     }
     &__img svg {
       position: absolute;
-      top: 235px;
-      left: 280px;
+      top: 190px;
+      left: 283px;
     }
     &__depiction {
       width: 590px;
-      margin: 0 0 30px 12px;
+      margin: 0 0 35px 10px;
       padding: 0 0 0 30px;
       text-align: left;
       line-height: 30px;
       font-size: 15px;
     }
     & .btn {
-      margin: 0 0 30px 0;
-      padding: 16px 22px 16px 22px;
+      margin: 0 0 47px 0;
+      padding: 16px 25px 16px 25px;
       width: 80%;
     }
 }
@@ -114,15 +114,16 @@
     display: flex;
     flex-direction: row;
     width: 1046px;
+    margin: 26px 0 0 0;
     border: none;
 
     &__title {
       position: absolute;
-      margin: 0 0 0 42px;
+      margin: 0;
       width: 230px;
       height: 60px;
-      top: 90px;
-      left: 670px;
+      top: 94px;
+      left: 733px;
       text-align: left;
       line-height: 25px;
     }
@@ -132,36 +133,37 @@
       width: 30px;
       height: 30px;
       top: -40px;
-      left: 32px;
+      top: -52px;
+      left: 29px;
       background: url(../img/icon-video.svg) no-repeat;
       z-index: 10;
     }
     &__img {
       position: relative;
       margin: 0 0 0 0;
-      width: 668px;
+      width: 710px;
       height: 456px;
     }
     &__img svg {
       position: absolute;
-      top: 220px;
-      left: 280px;
+      top: 190px;
+      left: 300px;
     }
     &__wrapper {
       width: 376px;
       border: 1px solid #ececec;
     }
     &__depiction {
-      width: 290px;
-      margin: 180px 0 30px 73px;
-      padding: 0 0 0 0;
+      width: 280px;
+      margin: 178px 0 48px 5px;
+      padding: 0 0 0 72px;
       text-align: left;
-      line-height: 25px;
+      line-height: 29px;
     }
     & .btn {
       width: auto;
-      margin: 0 40px 30px 40px;
-      padding: 16px 40px 16px 40px;
+      margin: 0 11px 0 40px;
+      padding: 16px 43px;
     }
   }
 

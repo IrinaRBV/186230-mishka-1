@@ -9,7 +9,6 @@
 
 
   &__copyright {
-    position: relative;
     display: flex;
     justify-content: center;
     margin: 0 0 30px 0;
@@ -17,10 +16,11 @@
   &__title {
     font-size: 19px;
     font-weight: bold;
-    margin: 0 25px 0 0;
+    margin: 0;
     padding: 0;
   }
   &__title a {
+    display: flex;
     text-decoration: none;
     color: #000;
   }
@@ -31,10 +31,7 @@
     opacity: 0.3;
   }
   &__copyright-link svg {
-    position: absolute;
-    padding: 0 0 0 141px;
-    top: -4px;
-    right: 35px;
+    padding: 0 0 0 29px;
   }
   &__copyright-link svg:hover {
     fill: #46c1ae;
@@ -79,10 +76,9 @@
 
 
     &__copyright {
-      position: relative;
       display: flex;
       justify-content: center;
-      margin: auto 30px auto 0;
+      margin: auto 0 auto 0;
     }
     &__copyright-link:focus {
       opacity: 0.3;
@@ -90,14 +86,8 @@
     &__title {
       font-size: 19px;
       font-weight: bold;
-      margin: 0 25px 0 0;
-      padding: 0;
-    }
-    &__copyright-link svg {
-      position: absolute;
-      padding: 0 0 0 141px;
-      top: -4px;
-      right: -15px;
+      margin: 0 19px 0 0;
+      padding: 19px 0 0 0;
     }
     &__copyright-link svg:hover {
       fill: #46c1ae;
@@ -112,6 +102,7 @@
       width: 115px;
       height: 50px;
       margin: auto 0 auto 0;
+      padding: 16px 0 0 21px;
     }
     &__logo svg {
       fill: #000;
@@ -128,5 +119,18 @@
 
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+
+    &__copyright {
+      margin: auto 0 auto 0;
+    }
+    &__title {
+      margin: 0 20px 0 0;
+      padding: 19px 0 0;
+    }
+    &__logo {
+      padding: 11px 0 0 22px;
+    }
+  }
 
 }

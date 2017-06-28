@@ -3,6 +3,7 @@
 
 .color {
   position: relative;
+  margin: 0;
 
   &__list {
     margin: 0;
@@ -10,39 +11,44 @@
   }
   &__item {
     position: relative;
-    margin: 15px 0 0 5px;
-    padding: 0 0 0 30px;
+    margin: 0 0 22px 5px;
+    padding: 17px 0 0 60px;
     list-style: none;
   }
-  & input[type="checkbox"] + .form__label-checkbox .form__indicator:hover {
-    border-color: #62d1ba;
+  & input[type="checkbox"] + .form__label-checkbox .indicator--checkbox {
+    position: absolute;
+    top: 5px;
+    left: -3px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #444;
+    cursor: pointer;
   }
-  & input[type="checkbox"] + .form__label-checkbox .form__indicator:focus {
-    border-color: #c7c7c7;
-  }
-  & input[type="checkbox"]:checked + .form__label-checkbox .form__indicator::before {
+  & input[type="checkbox"]:checked + .form__label-checkbox .indicator--checkbox::before {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 1px;
-    width: 7px;
+    top: 23px;
+    left: 6px;
+    width: 10px;
     height: 2px;
     background-color: #000;
-  }
-  & input[type="checkbox"]:checked + .form__label-checkbox .form__indicator::after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 4px;
-    width: 15px;
-    height: 2px;
-    background-color: #000;
-  }
-  & input[type="checkbox"]:checked + .form__label-checkbox .form__indicator::before {
     transform: rotate(45deg);
   }
-  & input[type="checkbox"]:checked + .form__label-checkbox .form__indicator::after {
+  & input[type="checkbox"]:checked + .form__label-checkbox .indicator--checkbox::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    width: 22px;
+    height: 2px;
+    background-color: #000;
     transform: rotate(-45deg);
+  }
+  & input[type="checkbox"] + .form__label-checkbox .indicator--checkbox:hover {
+    border-color: #62d1ba;
+  }
+  & input[type="checkbox"] + .form__label-checkbox .indicator--checkbox:focus {
+    border-color: #c7c7c7;
   }
 }
 
@@ -51,37 +57,49 @@
   .color {
     display: flex;
     margin: 0 0 0 0;
-    padding: 30px 50px 30px 50px;
+    padding: 50px 50px 25px 50px;
     background-color: #f1f1f1;
 
     &__list {
       display: flex;
       flex-wrap: wrap;
       margin: 0 0 0 100px;
-      padding: 0;
+      padding: 0 0 0 35px;
     }
     &__item {
       position: relative;
       width: 130px;
-      margin: 20px 50px 20px 9px;
-      padding: 0 0 0 30px;
+      margin: 14px 7px 40px 0;
+      padding: 0 0 0 53px;
       list-style: none;
     }
-    & input[type="checkbox"]:checked + .form__label-checkbox .form__indicator::before {
+    &__list li.color__item:nth-child(2),
+    &__list li.color__item:nth-child(4),
+    &__list li.color__item:nth-child(6) {
+      padding: 0 0 0 47px;
+      margin: 13px 0 0 78px;
+    }
+    & input[type="checkbox"] + .form__label-checkbox .indicator--checkbox {
+      top: -14px;
+      left: -29px;
+      width: 50px;
+      height: 48px;
+    }
+    & input[type="checkbox"]:checked + .form__label-checkbox .indicator--checkbox::before {
       content: "";
       position: absolute;
-      top: 23px;
-      left: 2px;
-      width: 15px;
+      top: 29px;
+      left: 7px;
+      width: 16px;
       height: 2px;
       background-color: #000;
     }
-    & input[type="checkbox"]:checked + .form__label-checkbox .form__indicator::after {
+    & input[type="checkbox"]:checked + .form__label-checkbox .indicator--checkbox::after {
       content: "";
       position: absolute;
-      top: 19px;
-      left: 10px;
-      width: 27px;
+      top: 24px;
+      left: 16px;
+      width: 29px;
       height: 2px;
       background-color: #000;
     }
@@ -92,21 +110,38 @@
   .color {
     display: flex;
     margin: 0 0 0 0;
-    padding: 30px 50px 30px 50px;
+    padding: 51px 50px 0 50px;
     background-color: #f1f1f1;
 
+    &__title.keyword-h2 {
+      margin: 11px 0 0 0;
+      padding: 0 0 0 59px;
+    }
     &__list {
       display: flex;
       flex-wrap: wrap;
-      margin: 0 100px 0 65px;
-      padding: 0;
+      width: 780px;
+      margin: 0;
+      padding: 13px 0 0 0;
     }
     &__item {
       position: relative;
       width: 130px;
-      margin: 20px 50px 20px 9px;
+      margin: 0 100px 55px 0;
       padding: 0 0 0 30px;
       list-style: none;
+    }
+    &__list li.color__item:nth-child(2),
+    &__list li.color__item:nth-child(4),
+    &__list li.color__item:nth-child(6) {
+      padding: 0 0 0 30px;
+      margin: 0 100px 55px 0;
+    }
+    & input[type=checkbox]+.form__label-checkbox .indicator--checkbox {
+      top: -15px;
+      left: -51px;
+      width: 50px;
+      height: 48px;
     }
   }
 }

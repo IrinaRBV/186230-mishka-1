@@ -5,13 +5,14 @@
   &__title {
     font-size: 18px;
     font-weight: bold;
+    margin-top: 38px;
     padding: 0 30px 0 30px;
   }
   &__list {
     display: flex;
     flex-wrap: wrap;
     width: 260px;
-    margin-bottom: 35px;
+    margin-bottom: 14px;
     padding: 0 30px 0 30px;
     font-size: 15px;
     font-weight: normal;
@@ -19,28 +20,41 @@
   }
   & p {
     vertical-align: top;
-    padding: 10px 25px 0 0;
-    line-height: 35px;
+    padding: 12px 28px 16px 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 32px;
   }
   &__value {
     width: 155px;
   }
   &__value--line {
     cursor: pointer;
+    padding-bottom: 4px;
     border-bottom: 1px solid #62d1ba;
   }
   &__value--hover:hover {
     color: #62d1ba;
   }
   &__map {
+    position: relative;
     width: 320;
     height: 457px;
     padding: 0;
     margin: 0;
   }
+  &__map:before {
+    position: absolute;
+    content: '';
+    top: 165px;
+    left: 124px;
+    width: 80px;
+    height: 110px;
+    background: url(../img/icon-map-pin.svg) no-repeat;
+  }
   & .btn {
-    margin: 40px 30px 40px 30px;
-    padding: 15px 53px 15px 48px;
+    margin: 37px 30px;
+    padding: 15px 55px 11px 52px;
   }
 
 }
@@ -56,24 +70,24 @@
     &:before {
       content: '';
       position: absolute;
-      right: 0;
-      top: 30px;
+      right: 52px;
+      top: 45px;
       width: 47px;
       height: 82px;
       background: url(../img/icon-flag.svg) no-repeat;
     }
     &__title {
-      margin-left: 15px;
-      padding: 0 30px 0 30px;
+      margin-left: 17px;
+      padding: 0 30px;
       font-size: 43px;
-      font-weight: bold;
+      font-weight: 700;
+      margin-top: 56px;
     }
     &__list {
       display: flex;
       flex-wrap: no-wrap;
       width: 668px;
-      margin: 0 auto 35px auto;
-      margin-left: 15px;
+      margin: 4px auto 50px 15px;
       padding: 0 30px 0 30px;
       font-size: 17px;
       font-weight: normal;
@@ -82,53 +96,60 @@
     & p {
       vertical-align: top;
       padding: 10px 25px 0 0;
-      line-height: 35px;
+      line-height: 32px;
     }
     &__value {
       width: 220px;
+    }
+    p.contacts__value br {
+      display: none;
     }
     &__map {
       width: 768px;
       height: 457px;
       padding: 0;
       margin: 0;
-
+    }
+    &__map:before {
+      left: 349px;
     }
     & .btn {
-      margin: 40px auto 40px auto;
-      padding: 15px 53x 15px 48px;
+      margin: 55px auto;
+      padding: 14px 38px 11px 40px;
     }
   }
 }
 
 
 @media (min-width: $desktop-width) {
-    .contacts {
+  .contacts {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 66px;
 
     &:before {
       content: '';
       position: absolute;
-      left: 75px;
-      top: 30px;
+      left: 114px;
+      top: 129px;
       width: 47px;
       height: 82px;
       background: url(../img/icon-flag.svg) no-repeat;
     }
     &__title {
-      margin-left: 175px;
+      margin-left: 221px;
+      margin-top: 129px;
       padding: 0;
-      font-size: 43px;
+      font-size: 53px;
       font-weight: bold;
     }
     &__list {
       display: flex;
       flex-wrap: no-wrap;
       width: 350px;
-      margin: 0 0 35px 175px;
+      margin: 0 0 12px 225px;
       padding: 0;
       font-size: 17px;
       font-weight: normal;
@@ -136,7 +157,7 @@
     }
     & p {
       vertical-align: top;
-      padding: 10px 25px 0 0;
+      padding: 0 25px 27px 0;
       line-height: 30px;
     }
     &__value {
@@ -151,12 +172,15 @@
       height: 457px;
       padding: 0;
       margin: 0;
-      top: 30px;
+      top: 67px;
       right: 50px;
     }
+    &__map:before {
+      left: 238px;
+    }
     & .btn {
-      margin: 40px 30px 40px 175px;
-      padding: 15px 53px 15px 48px;
+      margin: 40px 30px 40px 227px;
+      padding: 15px 43px 10px 35px;
     }
   }
 }

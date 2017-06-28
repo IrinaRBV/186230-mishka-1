@@ -3,38 +3,44 @@
 
 .email {
   position: relative;
+  margin: 0 0 30px 0;
 
+  h2.email__title {
+    margin: 0;
+  }
   & input {
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
-    background-position: 220px 4px;
+    background-position: 226px 13px;
   }
   & input:hover {
     background-image: url("../img/icon-mail-hover.svg");
     background-repeat: no-repeat;
-    background-position: 220px 4px;
+    background-position: 226px 13px;
   }
-
 }
 
 
 @media (min-width: $tablet-width) {
   .email {
     display: flex;
-    padding: 25px 50px 70px 50px;
+    padding: 0 50px 37px 50px;
     background-color: #f1f1f1;
 
+    h2.email__title {
+      padding: 8px 0 0 0;
+    }
     & input {
       margin: 5px 0 0 0;
       background-color: #f1f1f1;
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
-      background-position: 490px 10px;
+      background-position: 447px 1px;
     }
     & input:hover {
       background-image: url("../img/icon-mail-hover.svg");
       background-repeat: no-repeat;
-      background-position: 490px 10px;
+      background-position: 447px 1px;
     }
   }
 }
@@ -42,20 +48,24 @@
 @media (min-width: $desktop-width) {
   .email {
     display: flex;
-    padding: 25px 50px 70px 50px;
+    padding: 0 226px 50px 111px;
     background-color: #f1f1f1;
 
+    h2.email__title {
+      width: 76px;
+      padding: 40px 0 0 0;
+    }
     & input {
-      margin: 5px 175px 0 0;
+      margin: 5px 125px 0 30px;
       background-color: #f1f1f1;
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
-      background-position: 670px 10px;
+      background-position: 665px 0;
     }
     & input:hover {
       background-image: url("../img/icon-mail-hover.svg");
       background-repeat: no-repeat;
-      background-position: 670px 10px;
+      background-position: 665px 0;
     }
   }
 }

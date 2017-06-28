@@ -3,18 +3,24 @@
 
 .phone {
   position: relative;
+  margin: 0 0 30px 0;
 
+  &__title {
+    margin: 7px 0 0 0;
+  }
+  h2.phone__title {
+    margin: 8px 0 0 0;
+  }
   & input {
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
-    background-position: 222px 6px;
+    background-position: 229px 13px;
   }
   & input:hover {
     background-image: url("../img/icon-phone-hover.svg");
     background-repeat: no-repeat;
-    background-position: 222px 6px;
+    background-position: 229px 13px;
   }
-
 }
 
 
@@ -22,21 +28,24 @@
   .phone {
     display: flex;
     margin: 0;
-    padding: 65px 50px 0 50px;
+    padding: 44px 50px 0;
     background-color: #f1f1f1;
 
+    h2.phone__title {
+      padding: 0;
+    }
     & input {
       position: relative;
       margin: 5px 0 0 0;
       background-color: #f1f1f1;
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
-      background-position: 493px 10px;
+      background-position: 450px 1px;
     }
     & input:hover {
       background-image: url("../img/icon-phone-hover.svg");
       background-repeat: no-repeat;
-      background-position: 493px 10px;
+      background-position: 450px 1px;
     }
   }
 }
@@ -45,20 +54,24 @@
   .phone {
     display: flex;
     margin: 0;
-    padding: 65px 50px 0 50px;
+    padding: 0 226px 0 111px;
     background-color: #f1f1f1;
 
+    h2.phone__title {
+      margin: 55px 0 0 0;
+      width: 76px;
+    }
     & input {
-      margin: 5px 175px 0 0;
+      margin: 5px 125px 0 30px;
       background-color: #f1f1f1;
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
-      background-position: 670px 10px;
+      background-position: 668px 0;
     }
     & input:hover {
       background-image: url("../img/icon-phone-hover.svg");
       background-repeat: no-repeat;
-      background-position: 670px 10px;
+      background-position: 668px 0;
     }
   }
 }

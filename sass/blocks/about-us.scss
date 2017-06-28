@@ -3,26 +3,33 @@
 
 .about-us {
   padding: 0 30px 0 30px;
+  margin-bottom: 50px;
 
   &__list {
     width: 260px;
-    margin: 10px 0 0 -37px;
+    margin: 10px 0 0 0;
+    padding: 0;
   }
   &__item {
-    padding-top: 25px;
+    padding-top: 14px;
     list-style: none;
   }
   &__text{
     width: 260px;
+    margin: 18px 0 18px 0;
     font-size: 17px;
     font-weight: bold;
     line-height: 20px;
+  }
+  & h2 {
+    margin: 26px 0 0 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .about-us {
   padding: 0 50px 0 50px;
+  margin-bottom: 25px;
 
     &__title {
       margin-left: 0;
@@ -40,18 +47,31 @@
       padding: 0;
     }
     &__item {
-      height: 125px;
-      padding-top: 25px;
+      height: 120px;
+      padding-top: 37px;
       list-style: none;
     }
+    &__item svg {
+      padding: 7px 0 3px 10px;
+    }
     &__text{
+      margin: 13px 0;
+      width: 297px;
       font-size: 20px;
       font-weight: bold;
     }
     &__item:nth-child(4),
     &__item:nth-child(5),
     &__item:nth-child(6) {
-      margin-left: 100px;
+      margin-left: 14px;
+      padding-top: 37px;
+    }
+    &__item:nth-child(2),
+    &__item:nth-child(5) {
+      padding-top: 37px;
+    }
+    & h2 {
+      margin: 46px 0 0 0;
     }
   }
 }
@@ -59,7 +79,8 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-  padding: 0 50px 0 50px;
+    margin-bottom: 20px;
+    padding: 0 50px 0 50px;
 
     &__title {
       margin-left: 175px;
@@ -70,6 +91,7 @@
       width: 700px;
       height: 510px;
       margin: 10px 0 0 135px;
+      padding: 0 0 0 42px;
     }
     &__item {
       height: 125px;
@@ -84,7 +106,18 @@
     &__item:nth-child(4),
     &__item:nth-child(5),
     &__item:nth-child(6) {
-      margin-left: 110px;
+      margin-left: 0;
+      padding-top: 28px;
+    }
+    &__item:nth-child(5) {
+      padding-top: 34px;
+    }
+    &__item svg {
+      padding: 4px 0 3px 5px;
+    }
+    & h2 {
+      margin: 61px 0 0 173px;
+      font-size: 52px;
     }
   }
 }

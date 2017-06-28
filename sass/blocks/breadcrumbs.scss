@@ -23,9 +23,18 @@
 @media (min-width: $tablet-width) {
   .breadcrumbs {
     display: flex;
-    font-weight: normal;
-    z-index: 100;
+    font-weight: 400;
+    height: 50px;
+    width: 384px;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    align-self: flex-end;
+    order: 4;
 
+    &--color {
+      background-color: #f1f1f1;
+    }
     &__item:nth-child(3) {
       margin-left: auto;
       a {
@@ -37,7 +46,8 @@
       display: none;
     }
     &__item {
-      margin-right: 42px;
+      margin-right: 50px;
+      margin-top: 18px;
     }
 
   }
@@ -46,11 +56,15 @@
 @media (min-width: $desktop-width) {
   .breadcrumbs {
     display: flex;
-    justify-content: flex-end;
+    align-self: auto;
+    width: 100%;
     font-weight: normal;
     height: 20px;
     z-index: 100;
 
+    &--color {
+      background-color: #f1f1f1;
+    }
     &__item {
       margin-right: 42px;
     }
@@ -62,6 +76,9 @@
       display: block;
       font-weight: bold;
       color: #000;
+    }
+    &__item:nth-child(1) {
+      margin-left: 50px;
     }
     &__item:nth-child(2) {
       padding-left: 10px;
